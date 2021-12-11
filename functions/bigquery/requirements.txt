@@ -1,0 +1,6 @@
+
+google-cloud-bigquery
+google-api-core
+google-auth-oauthlib
+pandas
+sendgrid

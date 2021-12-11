@@ -1,0 +1,7 @@
+
+google-cloud-firestore
+pandas
+numpy
+faker
+anonymizedf
+sendgrid

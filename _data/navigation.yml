@@ -1,0 +1,12 @@
+# - name: Pricing
+#  link: /pricing.html
+#  new_window: false
+#  highlight: false
+#- name: About
+#  link: /about.html
+#  new_window: false
+#  highlight: false
+- name: Sign Up / Login
+  link: /signup.html
+  new_window: true
+  highlight: true
