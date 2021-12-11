@@ -1,0 +1,323 @@
+---
+layout: default
+title: ui
+---
+<br>
+<br>
+<div class="d-flex justify-content-center">
+<!--<img class="d-block mx-auto mb-4" src="../assets/brand/bootstrap-solid.svg" alt="" width="72" height="72"> -->
+<h2>Select fields for your dataset from the options below</h2>
+</div>
+
+<div class="container w-50" id="form div">
+  <form onsubmit="return handleCreate(event)" id="dataFieldsForm">
+    <h4 align="center">User Information</h4>
+    <div class="custom-control custom-checkbox">
+      <div class="row">
+        <input onclick="checkboxCompanychecked()" type="checkbox" class="form-check-input col-2" id="checkboxCompany">
+        <label class="custom-control-label col-6" for="save-info">Company Name</label>
+      </div>
+    </div>
+    <div class="custom-control custom-checkbox">
+      <div class="row">
+        <input onclick="checkboxNamechecked()" type="checkbox" class="form-check-input col-2" id="checkboxName">
+        <label class="custom-control-label col-6" for="save-info">Name</label>
+      </div>
+    </div>
+    <div class="custom-control custom-checkbox">
+      <div class="row">
+        <input onclick="checkboxUserIDchecked()" type="checkbox" class="form-check-input col-2" id="checkboxUserID">
+        <label class="custom-control-label col-6" for="same-address">User ID</label>
+      </div>
+    </div>
+    <div class="custom-control custom-checkbox">
+      <div class="row">
+        <input onclick="checkboxUsernamechecked()" type="checkbox" class="form-check-input col-2" id="checkboxUsername">
+        <label class="custom-control-label col-6" for="save-info">Username</label>
+      </div>
+    </div>
+    <div class="custom-control custom-checkbox">
+      <div class="row">
+        <input onclick="checkboxJobchecked()" type="checkbox" class="form-check-input col-2" id="checkboxJob">
+        <label class="custom-control-label col-6" for="save-info">Job</label>
+      </div>
+    </div>
+    <br>
+    <h4 align="center">Contact Information</h4>
+    <div class="custom-control custom-checkbox">
+      <div class="row">
+        <input onclick="checkboxAddresschecked()" type="checkbox" class="form-check-input col-2" id="checkboxAddress">
+        <label class="custom-control-label col-6" for="save-info">Physical Address</label>
+      </div>
+    </div>
+    <div class="custom-control custom-checkbox">
+      <div class="row">
+        <input onclick="checkboxEmailchecked()" type="checkbox" class="form-check-input col-2" id="checkboxEmail">
+        <label class="custom-control-label col-6" for="save-info">Email Address</label>
+      </div>
+    </div>
+    <div class="custom-control custom-checkbox">
+      <div class="row">
+        <input onclick="checkboxPhonechecked()" type="checkbox" class="form-check-input col-2" id="checkboxPhone">
+        <label class="custom-control-label col-6" for="save-info">Phone Number</label>
+      </div>
+    </div>
+    <div class="custom-control custom-checkbox">
+      <div class="row">
+        <input onclick="checkboxURLchecked()" type="checkbox" class="form-check-input col-2" id="checkboxURL">
+        <label class="custom-control-label col-6" for="save-info">Website URL</label>
+      </div>
+    </div>
+    <br>
+    <h4 align="center">Credit Card Information</h4>
+    <div class="custom-control custom-checkbox">
+      <div class="row">
+        <input onclick="checkboxCreditCardFullchecked()" type="checkbox" class="form-check-input col-2" id="checkboxCreditCardFull">
+        <label class="custom-control-label col-6" for="save-info">Credit Card Full</label>
+      </div>
+    </div>
+    <div class="custom-control custom-checkbox">
+      <div class="row">
+        <input onclick="checkboxCreditCardProviderchecked()" type="checkbox" class="form-check-input col-2" id="checkboxCreditCardProvider">
+        <label class="custom-control-label col-6" for="save-info">Credit Card Provider</label>
+      </div>
+    </div>
+    <div class="custom-control custom-checkbox">
+      <div class="row">
+        <input onclick="checkboxCreditCardNumberchecked()" type="checkbox" class="form-check-input col-2" id="checkboxCreditCardNumber">
+        <label class="custom-control-label col-6" for="save-info">Credit Card Number</label>
+      </div>
+    </div>
+    <div class="custom-control custom-checkbox">
+      <div class="row">
+        <input onclick="checkboxCreditCardExpirechecked()" type="checkbox" class="form-check-input col-2" id="checkboxCreditCardExpire">
+        <label class="custom-control-label col-6" for="save-info">Credit Card Expire</label>
+      </div>
+    </div>
+    <div class="custom-control custom-checkbox">
+      <div class="row">
+        <input onclick="checkboxCreditCardSecurityCodechecked()" type="checkbox" class="form-check-input col-2" id="checkboxCreditCardSecurityCode">
+        <label class="custom-control-label col-6" for="save-info">Credit Card Security Code</label>
+      </div>
+    </div>
+    <br>
+    <h4 align="center">Bank Information</h4>
+    <div class="custom-control custom-checkbox">
+      <div class="row">
+        <input onclick="checkboxBankCountrychecked()" type="checkbox" class="form-check-input col-2" id="checkboxBankCountry">
+        <label class="custom-control-label col-6" for="save-info">Bank Country</label>
+      </div>
+    </div>
+    <div class="custom-control custom-checkbox">
+      <div class="row">
+        <input onclick="checkboxBasicBankAccountchecked()" type="checkbox" class="form-check-input col-2" id="checkboxBasicBankAccount">
+        <label class="custom-control-label col-6" for="save-info">Basic Bank Account</label>
+      </div>
+    </div>
+    <div class="custom-control custom-checkbox">
+      <div class="row">
+        <input onclick="checkboxIntlBankAccountchecked()" type="checkbox" class="form-check-input col-2" id="checkboxIntlBankAccount">
+        <label class="custom-control-label col-6" for="save-info">International Bank Account</label>
+      </div>
+    </div>
+    <br>
+    <h4 align="center">Currency Information</h4>
+    <div class="custom-control custom-checkbox">
+      <div class="row">
+        <input onclick="checkboxCurrencyNamechecked()" type="checkbox" class="form-check-input col-2" id="checkboxCurrencyName">
+        <label class="custom-control-label col-6" for="save-info">Currency Name</label>
+      </div>
+    </div>
+    <div class="custom-control custom-checkbox">
+      <div class="row">
+        <input onclick="checkboxCurrencyCodechecked()" type="checkbox" class="form-check-input col-2" id="checkboxCurrencyCode">
+        <label class="custom-control-label col-6" for="save-info">Currency Code</label>
+      </div>
+    </div>
+    <div class="custom-control custom-checkbox">
+      <div class="row">
+        <input onclick="checkboxCryptoCurrencyNamechecked()" type="checkbox" class="form-check-input col-2" id="checkboxCryptoCurrencyName">
+        <label class="custom-control-label col-6" for="save-info">Cryptocurrency Name</label>
+      </div>
+    </div>
+    <div class="custom-control custom-checkbox">
+      <div class="row">
+        <input onclick="checkboxCryptoCurrencyCodechecked()" type="checkbox" class="form-check-input col-2" id="checkboxCryptoCurrencyCode">
+        <label class="custom-control-label col-6" for="save-info">Cryptocurrency Code</label>
+      </div>
+    </div>
+    <br>
+    <h4 align="center">Date Information</h4>
+    <div class="custom-control custom-checkbox">
+      <div class="row">
+        <input onclick="checkboxAmPmchecked()" type="checkbox" class="form-check-input col-2" id="checkboxAmPm">
+        <label class="custom-control-label col-6" for="save-info">AM PM Flag</label>
+      </div>
+    </div>
+    <div class="custom-control custom-checkbox">
+      <div class="row">
+        <input onclick="checkboxDatechecked()" type="checkbox" class="form-check-input col-2" id="checkboxDate">
+        <label class="custom-control-label col-6" for="save-info">Date</label>
+      </div>
+    </div>
+    <div class="custom-control custom-checkbox">
+      <div class="row">
+        <input onclick="checkboxDayofMonthchecked()" type="checkbox" class="form-check-input col-2" id="checkboxDayofMonth">
+        <label class="custom-control-label col-6" for="save-info">Day of Month</label>
+      </div>
+    </div>
+    <div class="custom-control custom-checkbox">
+      <div class="row">
+        <input onclick="checkboxDayofWeekchecked()" type="checkbox" class="form-check-input col-2" id="checkboxDayofWeek">
+        <label class="custom-control-label col-6" for="save-info">Day of Week</label>
+      </div>
+    </div>
+    <div class="custom-control custom-checkbox">
+      <div class="row">
+        <input onclick="checkboxMonthchecked()" type="checkbox" class="form-check-input col-2" id="checkboxMonth">
+        <label class="custom-control-label col-6" for="save-info">Month</label>
+      </div>
+    </div>
+    <div class="custom-control custom-checkbox">
+      <div class="row">
+        <input onclick="checkboxMonthNamechecked()" type="checkbox" class="form-check-input col-2" id="checkboxMonthName">
+        <label class="custom-control-label col-6" for="save-info">Month Name</label>
+      </div>
+    </div>
+    <div class="custom-control custom-checkbox">
+      <div class="row">
+        <input onclick="checkboxYearchecked()" type="checkbox" class="form-check-input col-2" id="checkboxYear">
+        <label class="custom-control-label col-6" for="save-info">Year</label>
+      </div>
+    </div>
+    <br>
+    <h4 align="center">Color Information</h4>
+    <div class="custom-control custom-checkbox">
+      <div class="row">
+        <input onclick="checkboxColorNamechecked()" type="checkbox" class="form-check-input col-2" id="checkboxColorName">
+        <label class="custom-control-label col-6" for="save-info">Color Name</label>
+      </div>
+    </div>
+    <div class="custom-control custom-checkbox">
+      <div class="row">
+        <input onclick="checkboxWebSafeColorNamechecked()" type="checkbox" class="form-check-input col-2" id="checkboxWebSafeColorName">
+        <label class="custom-control-label col-6" for="save-info">Web Compatible Color Name</label>
+      </div>
+    </div>
+    <div class="custom-control custom-checkbox">
+      <div class="row">
+        <input onclick="checkboxHexColorchecked()" type="checkbox" class="form-check-input col-2" id="checkboxHexColor">
+        <label class="custom-control-label col-6" for="save-info">Hex Color</label>
+      </div>
+    </div>
+    <div class="custom-control custom-checkbox">
+      <div class="row">
+        <input onclick="checkboxRGBColorchecked()" type="checkbox" class="form-check-input col-2" id="checkboxRGBColor">
+        <label class="custom-control-label col-6" for="save-info">RGB Color</label>
+      </div>
+    </div>
+    <div class="custom-control custom-checkbox">
+      <div class="row">
+        <input onclick="checkboxRGBCSSColorchecked()" type="checkbox" class="form-check-input col-2" id="checkboxRGBCSSColor">
+        <label class="custom-control-label col-6" for="save-info">RGB CSS Color</label>
+      </div>
+    </div>
+    <br>
+    <h4 align="center">Miscellaneous Information</h4>
+    <div class="custom-control custom-checkbox">
+      <div class="row">
+        <input onclick="checkboxBarcodeEAN8checked()" type="checkbox" class="form-check-input col-2" id="checkboxBarcodeEAN8">
+        <label class="custom-control-label col-6" for="save-info">Barcode EAN-8</label>
+      </div>
+    </div>
+    <div class="custom-control custom-checkbox">
+      <div class="row">
+        <input onclick="checkboxBarcodeEAN13checked()" type="checkbox" class="form-check-input col-2" id="checkboxBarcodeEAN13">
+        <label class="custom-control-label col-6" for="save-info">Barcode EAN-13</label>
+      </div>
+    </div>
+    <div class="custom-control custom-checkbox">
+      <div class="row">
+        <input onclick="checkboxImageURLchecked()" type="checkbox" class="form-check-input col-2" id="checkboxImageURL">
+        <label class="custom-control-label col-6" for="save-info">Image URL</label>
+      </div>
+    </div>
+    <div class="custom-control custom-checkbox">
+      <div class="row">
+        <input onclick="checkboxLatitudechecked()" type="checkbox" class="form-check-input col-2" id="checkboxLatitude">
+        <label class="custom-control-label col-6" for="save-info">Latitude</label>
+      </div>
+    </div>
+    <div class="custom-control custom-checkbox">
+      <div class="row">
+        <input onclick="checkboxLongitudechecked()" type="checkbox" class="form-check-input col-2" id="checkboxLongitude">
+        <label class="custom-control-label col-6" for="save-info">Longitude</label>
+      </div>
+    </div>
+    <div class="custom-control custom-checkbox">
+      <div class="row">
+        <input onclick="checkboxLicensePlatechecked()" type="checkbox" class="form-check-input col-2" id="checkboxLicensePlate">
+        <label class="custom-control-label col-6" for="save-info">License Plate</label>
+      </div>
+    </div>
+
+
+    <br>
+    <div class="d-flex justify-content-center">
+      <button onclick="resetForm()" type="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
+    </div>
+  </form>
+</div>
+<br>
+<br>
+
+
+<!--
+<form id="dataFieldsForm" class="col-md-8 order-md-1">
+  <div class="custom-control custom-checkbox">
+    <input type="checkbox" class="custom-control-input" id="checkboxUserID">
+    <label class="custom-control-label" for="same-address">UserID</label>
+  </div>
+  <div class="custom-control custom-checkbox">
+    <input type="checkbox" class="custom-control-input" id="checkboxUsername">
+    <label class="custom-control-label" for="save-info">Username</label>
+  </div>
+  <div class="custom-control custom-checkbox">
+    <input type="checkbox" class="custom-control-input" id="checkboxName">
+    <label class="custom-control-label" for="save-info">Name</label>
+  </div>
+  <div class="custom-control custom-checkbox">
+    <input type="checkbox" class="custom-control-input" id="checkboxEmail">
+    <label class="custom-control-label" for="save-info">Email</label>
+  </div>
+  <div class="custom-control custom-checkbox">
+    <input type="checkbox" class="custom-control-input" id="checkboxAddress">
+    <label class="custom-control-label" for="save-info">Address</label>
+  </div>
+  <div class="custom-control custom-checkbox">
+    <input type="checkbox" class="custom-control-input" id="checkboxCompany">
+    <label class="custom-control-label" for="save-info">Company</label>
+  </div>
+  <div class="custom-control custom-checkbox">
+    <input type="checkbox" class="custom-control-input" id="checkboxDate">
+    <label class="custom-control-label" for="save-info">Date</label>
+  </div>
+
+  <br>
+  <div>
+    <button type="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
+  </div>
+</form>
+-->
+
+<!--
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+  <p class="mb-1">&copy; 2017-2020 Company Name</p>
+  <ul class="list-inline">
+    <li class="list-inline-item"><a href="#">Privacy</a></li>
+    <li class="list-inline-item"><a href="#">Terms</a></li>
+    <li class="list-inline-item"><a href="#">Support</a></li>
+  </ul>
+  </footer>
+  </div>
+-->
