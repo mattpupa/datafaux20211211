@@ -13,7 +13,7 @@ from firebase_admin import credentials, firestore, initialize_app
 app = Flask(__name__)
 
 # Initialize Firestore DB
-cred = credentials.Certificate("/Users/Matt/Desktop/Programming/Jekyll/Datafaux/pythonbackend/firebaseadminkey.json")
+cred = credentials.Certificate("/Datafaux/pythonbackend/firebaseadminkey.json")
 firebase_admin.initialize_app(cred)
 db = firestore.client()
 dataset_ref = db.collection('datasetResponses')
